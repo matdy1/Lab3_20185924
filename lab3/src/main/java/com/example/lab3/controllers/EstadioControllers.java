@@ -37,7 +37,7 @@ public class EstadioControllers {
     public String guardarDistribuidora( Estadio estadio){
 
         estadioRepositorio.save(estadio);
-        return "redirect:/lab3/estadio/lista";
+        return "redirect:/estadio/lista";
     }
 
     @GetMapping("/estadio/borrar")
@@ -49,6 +49,6 @@ public class EstadioControllers {
             estadioRepositorio.deleteById(id);
         }
 
-        return "redirect:/lab3/estadio/lista";
+        return "redirect:/estadio/lista";
     }
 }
