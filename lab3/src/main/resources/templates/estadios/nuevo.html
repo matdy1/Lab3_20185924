@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbar-app">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" th:href="@{/templates/estadios/lista}">Estadios</a>
+                        <a class="nav-link" th:href="@{/estadio/lista}">Estadios</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" th:href="@{/juegos/lista}"> Juegos</a>
@@ -41,24 +41,20 @@
             <h2>Nueva Jugador</h2>
         </div>
         <div class="container-fluid">
-            <form method="POST" th:action="@{/jugadores/guardar}">
+            <form method="POST" th:action="@{/estadio/guardar}">
                 <div class="mb-3">
                     <label for="nombre">Nombre</label>
                     <input name="nombre" type="text" class="form-control" id="nombre">
                 </div>
                 <div class="mb-3">
-                    <label for="edad">Edad</label>
-                    <input name="edad" type="text" class="form-control" id="edad">
-                </div>
-                <div class="mb-3">
-                    <label for="posicion">Posicion</label>
-                    <input name="posicion" type="text" class="form-control" id="posicion">
+                    <label for="provincia">Provincia</label>
+                    <input name="provincia" type="text" class="form-control" id="provincia">
                 </div>
                 <div class="mb-3">
                     <label for="club">Club</label>
                     <input name="club" type="text" class="form-control" id="club">
                 </div>
-                <a th:href="@{/jugadores/lista}" class="btn btn-danger">Cancelar</a>
+                <a th:href="@{/estadio/lista}" class="btn btn-danger">Cancelar</a>
                 <button type="submit" class="btn btn-primary">Guardar</button>
             </form>
         </div>

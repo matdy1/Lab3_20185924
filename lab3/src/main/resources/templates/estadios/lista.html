@@ -39,7 +39,7 @@
             </div>
             <div class="container-fluid">
 
-                <a class="btn btn-primary mt-4 mb-4" th:href="@{/jugadores/nuevo}">Nuevo Estadio</a>
+                <a class="btn btn-primary mt-4 mb-4" th:href="@{/estadio/nuevo}">Nuevo Estadio</a>
 
                 <table class="table table-striped">
                     <thead>
@@ -57,7 +57,7 @@
                         <td th:text="${dis.getNombre()}"></td>
                         <td th:text="${dis.getProvincia()}"></td>
                         <td th:text="${dis.getClub()}"></td>
-                        <td><a class="btn btn-danger" th:href="@{'/jugadores/borrar?id=' + ${dis.getIdEstadio()}}">Borrar</a></td>
+                        <td><a class="btn btn-danger" th:href="@{'/estadio/borrar?id=' + ${dis.getIdEstadio()}}">Borrar</a></td>
                     </tr>
                     </tbody>
                 </table>
